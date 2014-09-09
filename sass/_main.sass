@@ -1,0 +1,94 @@
+/*-----header-----------------------------------------------------*/
+.header
+	padding: 30px 40px 15px 
+	border-bottom: 1px solid #D4D8D8 
+	+clr
+	+box
+	.logo
+		margin-top: 5px	
+
+/*-----topper-----------------------------------------------------*/
+.topper
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/ 
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+/*-----logo-----------------------------------------------------*/
+.logo
+	float: left
+	font-size: 22px
+	line-height: 22px
+	color: #2C3E50
+	text-transform: uppercase 
+/*-----user-----------------------------------------------------*/
+.user
+	float: right
+	.i-user
+		float: right
+		margin-right: 10px
+		margin-top: 10px
+	.user__mail
+		float: right
+		color: #A9ADB3
+		margin-right: 10px
+		font-size: 13px
+		margin-top: 10px
+		+transition
+		&:hover
+			color: darken(#A9ADB3, 30%) 
+	.user__enter
+		float: right
+		border: 2px solid #CDD1D7
+		height: 40px
+		width: 40px
+		line-height: 40px
+		text-align: center 
+		position: relative
+		+border-radius(20px)
+		+box
+		+transition
+		&:hover
+			background-color: $btn_act-c
+			.user__popup
+				display: block
+		&:active
+			+transform(scale(0.9)) 	 
+		.ico
+			vertical-align: -3px 
+	.user__popup
+		position: absolute
+		top: -24px
+		left: 50%
+		background-color: #2C3E50
+		color: #fff
+		font-size: 12px
+		line-height: 12px
+		width: 60px
+		margin-left: -30px
+		text-align: center
+		padding: 5px 0 
+		display: none
+		+border-radius(3px)  
+		&:after
+			position: absolute
+			left: 50%
+			margin-left: -4px
+			bottom: -4px 
+			content: ""
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 4px 4px 0 4px
+			border-color: #2C3E50 transparent transparent transparent 		
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
