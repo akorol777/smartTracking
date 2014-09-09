@@ -6,10 +6,78 @@
 	+box
 	.logo
 		margin-top: 5px	
-
 /*-----topper-----------------------------------------------------*/
 .topper
-/*----------------------------------------------------------*/
+	height: 50px
+	background-color: $block-c
+/*-----list-----------------------------------------------------*/
+.list
+	.list__item
+		position: relative
+		text-align: center
+		height: 55px
+		line-height: 55px
+		border-bottom: 1px solid #d1d5d5
+		+clr
+		&:nth-child(2n+1)
+			background-color: #fbfbfc 
+		&:after
+			background-color: $active-c 		
+	.list__item-develop, .list__item-passive, .list__item-active
+		&:after	
+			position: absolute
+			content: ""
+			height: 100%
+			width: 9px
+			right: 0
+			top: 0 
+	.list__item-active
+		&:after
+			background-color: $active-c 
+	.list__item-develop
+		&:after
+			background-color: $develop-c 	
+	.list__item-passive
+		&:after
+			background-color: $passive-c 
+	.list__site
+		text-transform: uppercase		
+		color: #a7acb2
+		font-size: 15px
+		display: block
+		width: 200px
+		margin: 0 auto 
+	.list__info
+		float: right
+		display: none
+	.list__info-status
+		float: right
+		width: 90px
+		text-align: left
+		color: #FFF 
+		font-weight: bold
+		font-size: 12px
+	.list__info-icon
+		float: right	
+		margin-right: 24px	
+		+transition
+		&:hover
+			+transform(translateY(-3px))
+	.list-active	
+		.list__site
+			color: #FFF 
+			font-weight: bold
+		.list__info
+			display: block
+	.list-active-act
+		background-color: $active-c !important 
+		border-color: $active-c 
+	.list-active-pas
+		background-color: $passive-c !important 
+		border-color: $passive-c 
+	.list-active-dev
+		background-color: $develop-c !important 
+		border-color: $develop-c 								
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/ 
 /*----------------------------------------------------------*/
