@@ -78,7 +78,11 @@
 	.list-active-dev
 		background-color: $develop-c !important 
 		border-color: $develop-c 								
-/*----------------------------------------------------------*/
+/*-----footer-----------------------------------------------------*/
+.footer
+	background-color: $block-c
+	text-align: center 
+	padding: 25px 0 40px 
 /*----------------------------------------------------------*/ 
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
@@ -155,8 +159,34 @@
 			border-style: solid
 			border-width: 4px 4px 0 4px
 			border-color: #2C3E50 transparent transparent transparent 		
-
-/*----------------------------------------------------------*/
+/*-----pager-----------------------------------------------------*/
+.pager
+	display: inline-block
+	+clr
+	li
+		float: left
+		padding: 0 3px 
+	a
+		font-size: 18px
+		line-height: 26px
+	.pager-nav
+		padding: 0 6px 
+		a
+			font-size: 30px
+			line-height: 18px
+	.pager-number
+		a
+			height: 23px
+			width: 23px
+			line-height: 23px
+			display: inline-block
+			+border-radius(50%)
+			text-align: center
+			padding: 0	
+	.is-active	
+		a		
+			background-color: $btn_act-c
+			color: #FFF 
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/

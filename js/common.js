@@ -17,20 +17,7 @@ $(document).ready(function() {
 		return false							
 	});	
 
-	// $('.list__item-active').click(function(){
-	// 	$(this).toggleClass('list-active-act');
-	// 	return false							
-	// });	
-
-	// $('.list__item-passive').click(function(){
-	// 	$(this).toggleClass('list-active-pas');
-	// 	return false							
-	// });
-
-	// $('.list__item-develop').click(function(){
-	// 	$(this).toggleClass('list-active-dev');
-	// 	return false							
-	// });		
+		
 
 
 
