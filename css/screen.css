@@ -225,36 +225,57 @@ body, a, input, textarea { font-family: "Myriad Pro", Helvetica, Arial, sans-ser
 /*---------------------------------------------------------- */
 /*---------------------------------------------------------- */
 /*---------------------------------------------------------- */
-.call .call__item { min-height: 185px; border-bottom: 1px solid #f4f5f5; font-size: 13px; line-height: 16px; color: #808790; *zoom: 1; }
+.call .call__item { min-height: 185px; border-bottom: 1px solid #f4f5f5; font-size: 13px; line-height: 16px; color: #808790; position: relative; *zoom: 1; }
 .call .call__item:after { content: " "; display: table; clear: both; }
-.call .call__text-date { margin-bottom: 5px; }
+@media only screen and (max-width: 960px) { .call .call__item { font-size: 11px; min-height: 160px; line-height: 14px; } }
+.call .call__text-date { margin-bottom: 5px; white-space: nowrap; }
+@media only screen and (max-width: 960px) { .call .call__text-date { margin-bottom: 0; } }
 .call .call__text-strong { font-weight: bold; margin-bottom: 5px; color: #485564; font-size: 14px; }
-.call .call__status { min-height: 185px; position: relative; float: left; width: 2%; }
+@media only screen and (max-width: 960px) { .call .call__text-strong { font-size: 12px; } }
+.call .call__status { min-height: 185px; position: absolute; width: 18px; top: 0; left: 0; }
+@media only screen and (max-width: 960px) { .call .call__status { width: 15px; min-height: 160px; } }
 .call .call__status-in { color: white; font-size: 13px; line-height: 13px; font-weight: bold; white-space: nowrap; position: absolute; top: 0px; left: 0px; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); }
+@media only screen and (max-width: 960px) { .call .call__status-in { font-size: 11px; } }
 .call .call__status-nofile { background-color: red; }
 .call .call__status-nofile .call__status-in { left: -23px; top: 82px; }
+@media only screen and (max-width: 960px) { .call .call__status-nofile .call__status-in { left: -20px; top: 70px; } }
 .call .call__status-listened { background-color: #2ecc71; }
 .call .call__status-listened .call__status-in { left: -26px; top: 86px; }
+@media only screen and (max-width: 960px) { .call .call__status-listened .call__status-in { left: -22px; top: 74px; } }
 .call .call__status-unlistened { background-color: #5d6b78; }
 .call .call__status-unlistened .call__status-in { left: -35px; top: 86px; }
-.call .call__info { padding: 10px 10px 10px 40px; float: left; width: 20%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 960px) { .call .call__status-unlistened .call__status-in { left: -30px; top: 74px; } }
+.call .call__info { padding: 10px 10px 10px 55px; float: left; width: 22%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 960px) { .call .call__info { padding: 13px 0px 10px 33px; width: 24%; } }
 .call .call__user { float: left; width: 58%; padding-top: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .call .call__user:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 960px) { .call .call__user { padding-top: 13px; width: 60%; } }
 .call .call__user .call__text { padding: 0px 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .call .call__user .call__input { width: 47%; margin-left: 6%; float: left; }
+@media only screen and (max-width: 960px) { .call .call__user .call__input { width: 49%; margin-left: 2%; } }
 .call .call__user .call__input:first-child { margin-left: 0; }
 .call .call__user input, .call .call__user textarea { background-color: #f6f8f9; width: 100%; border: none; padding: 3px 15px 5px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 960px) { .call .call__user input, .call .call__user textarea { padding: 1px 15px 1px; } }
 .call .call__user input:-ms-input-placeholder { font-weight: bold; color: #485564; font-size: 14px; }
+@media only screen and (max-width: 960px) { .call .call__user input:-ms-input-placeholder { font-size: 12px; } }
 .call .call__user input:-moz-placeholder { font-weight: bold; color: #485564; font-size: 14px; }
+@media only screen and (max-width: 960px) { .call .call__user input:-moz-placeholder { font-size: 12px; } }
 .call .call__user input::-moz-placeholder { font-weight: bold; color: #485564; font-size: 14px; }
+@media only screen and (max-width: 960px) { .call .call__user input::-moz-placeholder { font-size: 12px; } }
 .call .call__user input::-webkit-input-placeholder { font-weight: bold; color: #485564; font-size: 14px; }
+@media only screen and (max-width: 960px) { .call .call__user input::-webkit-input-placeholder { font-size: 12px; } }
 .call .call__user input::placeholder { font-weight: bold; color: #485564; font-size: 14px; }
+@media only screen and (max-width: 960px) { .call .call__user input::placeholder { font-size: 12px; } }
 .call .call__user textarea { resize: none; height: 90px; }
+@media only screen and (max-width: 960px) { .call .call__user textarea { height: 55px; } }
 .call .call__action { float: left; width: 20%; text-align: center; padding-top: 26px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 960px) { .call .call__action { width: 16%; padding-top: 27px; } }
 .call .call__btn { color: white; background-color: #2ecc71; display: inline-block; font-size: 12px; font-weight: bold; line-height: 12px; padding: 5px 15px; margin-bottom: 5px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .call .call__btn:hover { background-color: #7ee2a8; }
 .call .call__btn:active { -webkit-transform: scale(0.9); -moz-transform: scale(0.9); -ms-transform: scale(0.9); -o-transform: scale(0.9); transform: scale(0.9); }
+@media only screen and (max-width: 960px) { .call .call__btn { font-size: 11px; line-height: 11px; padding: 3px 5px; margin-bottom: 4px; } }
 .call .call__action-text { font-size: 12px; line-height: 12px; font-weight: bold; color: #485564; }
+@media only screen and (max-width: 960px) { .call .call__action-text { font-size: 11px; line-height: 11px; } }
 .call .call__action-link { text-decoration: underline; position: relative; }
 .call .call__action-link:hover { text-decoration: none; }
 .call .call__action-link:after { position: absolute; content: ""; top: 7px; right: -16px; width: 0; height: 0; border-style: solid; border-width: 5px 5px 0 5px; border-color: #485564 transparent transparent transparent; }
